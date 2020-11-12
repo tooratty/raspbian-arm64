@@ -20,3 +20,16 @@ I used the new Raspberry Pi Imager located here, https://www.raspberrypi.org/sof
 
 ### Installation
 From this point the installation follows the same process as the 32-bit version of Raspbian.
+
+## Additional Setup for Owncloud and PiHole
+
+### Install latest Docker
+I used the covienence script to install the latest and greatest version of Docker,
+https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script
+
+### Update Rasbian 64-bit with Python Dependencies
+If you try to ```pip3 install docker-compose``` at this point it will fail with missing dependencies, to fix it follow this page,
+https://github.com/pyenv/pyenv/wiki/Common-build-problems
+
+### Install latest docker-compose
+Now ```pip3 install docker-compose``` will work.
